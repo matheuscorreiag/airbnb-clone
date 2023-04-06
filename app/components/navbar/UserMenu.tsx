@@ -7,6 +7,7 @@ import { MenuItem } from "./MenuItem";
 import useRegisterModal from "../../hooks/useRegisterModal";
 import useLoginModal from "../../hooks/useLoginModal";
 import { signOut } from "next-auth/react";
+import { User } from "@prisma/client";
 
 interface UserMenuProps {
   currentUser?: User | null;
