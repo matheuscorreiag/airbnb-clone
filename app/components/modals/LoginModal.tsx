@@ -113,8 +113,8 @@ export const LoginModal = () => {
       actionLabel="Continue"
       onClose={loginModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
-      body={bodyContent}
-      footer={footerContent}
+      body={bodyContent as any}
+      footer={footerContent as any}
     />
   );
 };
