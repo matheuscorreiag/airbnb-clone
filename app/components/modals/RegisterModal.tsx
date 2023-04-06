@@ -111,8 +111,8 @@ export const RegisterModal = () => {
       actionLabel="Continue"
       onClose={registerModal.onClose}
       onSubmit={handleSubmit(onSubmit)}
-      body={bodyContent}
-      footer={footerContent}
+      body={bodyContent as any}
+      footer={footerContent as any}
     />
   );
 };
