@@ -64,7 +64,7 @@ export const CategoryBox = ({
     >
       <Icon size={26} />
 
-      <div className="font-medium text-sm">{label}</div>
+      <div className="text-sm font-medium">{label}</div>
     </div>
   );
 };

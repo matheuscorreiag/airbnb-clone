@@ -107,13 +107,7 @@ export const Categories = () => {
   return (
     <Container>
       <div
-        className="
-    pt-4
-    flex
-    flex-row
-    items-center
-    justify-between
-    overflow-x-auto"
+        className="flex flex-row items-center justify-between pt-4 overflow-x-auto "
       >
         {categories.map((category) => (
           <CategoryBox
