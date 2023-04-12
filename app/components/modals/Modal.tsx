@@ -59,8 +59,8 @@ export const Modal = ({
   if (!isOpen) return null;
   return (
     <>
-      <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none  focus:outline-none bg-neutral-800/70">
-        <div className="relative w-full h-full mx-auto my-6  md:w-4/6 lg:w-3/6 xl:w-2/6 lg:h-auto md:h-auto">
+      <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none bg-neutral-800/70">
+        <div className="relative w-full h-full mx-auto my-6 md:w-4/6 lg:w-3/6 xl:w-2/6 lg:h-auto md:h-auto">
           <div
             className={`
         translate
@@ -70,7 +70,7 @@ export const Modal = ({
         ${showModal ? "opacity-100" : "opacity-0"}
         `}
           >
-            <div className="relative flex flex-col w-full h-full bg-white border-0 rounded-lg shadow-lg outline-none  translate lg:h-auto md:h-auto focus:outline-none">
+            <div className="relative flex flex-col w-full h-full bg-white border-0 rounded-lg shadow-lg outline-none translate lg:h-auto md:h-auto focus:outline-none">
               <div
                 className="
                  flex
@@ -84,7 +84,7 @@ export const Modal = ({
               >
                 <button
                   onClick={handleClose}
-                  className="absolute p-1 transition border-0  hover:opacity-70 left-9"
+                  className="absolute p-1 transition border-0 hover:opacity-70 left-9"
                 >
                   <IoMdClose size={18} />
                 </button>
@@ -98,7 +98,7 @@ export const Modal = ({
                       outline
                       disabled={disabled}
                       label={secondaryActionLabel}
-                      onClick={handleSubmit}
+                      onClick={handleSecondaryAction}
                     />
                   )}
                   <Button
