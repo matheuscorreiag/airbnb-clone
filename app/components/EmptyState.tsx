@@ -28,13 +28,15 @@ export const EmptyState = ({
                 "
     >
       <Heading center title={title} subtitle={subtitle} />
-      <div className="w-48 mt-4">
-        <Button
-          outline
-          label="Remove all filters"
-          onClick={() => router.push("/")}
-        />
-      </div>
+      {showReset && (
+        <div className="w-48 mt-4">
+          <Button
+            outline
+            label="Remove all filters"
+            onClick={() => router.push("/")}
+          />
+        </div>
+      )}
     </div>
   );
 };
